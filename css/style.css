@@ -1,0 +1,97 @@
+/* styling wit Id */
+#P1{
+    color: red;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+
+/* styling with class */
+.Paragraph{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*styling with element */
+p{
+    color: green;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+/* Css styling container */
+    /*on each row indicate the grid area to appear*/
+#grid-Container{
+    display: grid;
+    grid-template-areas:
+    'a a a a a a a a a a'
+    'b b c c c c c c d d'
+    'e e e e e e e e e e'
+    'f f g g g h h h i i'
+    'j j j j j j j j j j'
+    ;
+}
+
+#nav{
+    grid-area: a;
+    padding: 2px;
+    margin: 4px;
+}
+
+#A{
+    grid-area: b;
+    padding: 2px;
+    margin: 4px;
+}
+
+#B{
+    grid-area: c;
+    padding: 2px;
+    margin: 4px;
+}
+
+#C{
+    grid-area: d;
+    padding: 2px;
+    margin: 4px;
+}
+
+#D{
+    grid-area: e;
+    padding: 2px;
+    margin: 4px;
+}
+
+#divForm{
+    grid-area: f;
+    padding: 2px;
+    margin: 4px;
+}
+
+#divCard1{
+    grid-area: g;
+    padding: 2px;
+    margin: 4px;
+}
+
+#divCard2{
+    grid-area: h;
+    padding: 2px;
+    margin: 4px;
+}
+
+#divCard3{
+    grid-area: i;
+    padding: 2px;
+    margin: 4px;
+}
+
+#divfooter{
+    grid-area: j;
+    padding: 2px;
+    margin: 4px;
+}
