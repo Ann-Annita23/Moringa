@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>SearchItUp - Dictionary</header>
+    <div class="container">
+        <main>
+        <section id="form">
+            <form id="search_form">
+                <h3>Search for a Word</h3>
+                <input type="search" placeholder="Enter a word to search" id="search_input">
+                <button type="submit" id="s_button">Search</button>
+                <button id="theme_toggle">Switch Theme</button>
+            </form>
+         </section>
+         <section id="Results">
+            <h3>Word Search</h3>
+            <ul id="word_searched"><!--Definition and Pronounciation--></ul>
+
+            <div id="audio_container">
+                <audio id="pronounciation_audio" controls>
+                    <source src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+
+        <aside>
+            <h4>Synonyms</h4>
+                <ul id="synonyms"></ul>
+                <h4>Source details</h4>
+                <ul id="source_details"></ul>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+    </div>
+</html>

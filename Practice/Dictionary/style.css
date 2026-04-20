@@ -1,0 +1,132 @@
+/*General setup*/
+body{
+    background-color: #e3e8ee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/*Header*/
+header{
+    background-color: #3498db;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 20px;
+
+}
+h1{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*main*/
+main{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;/*Makes it stack on mobile*/
+}
+
+#form, #Results, aside{
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*Search Bar Styling*/
+#form {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#search-form {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="search"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #203d50;
+}
+
+/*Content Sections*/
+#Results{
+    flex: 2; /*Takes up more space*/
+    min-width: 300px;
+}
+
+aside {
+    flex: 1;/*Takes up less space*/
+    min-width: 250px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#audio_placeholder {
+    margin-top: 20px;
+}
+
+audio {
+    width: 100%;
+}
+
+.dark-mode {
+    background-color: #2c3e50;
+    color: white;
+}
+.dark-mode #form, .dark-mode #Results, .dark-mode aside {
+    background-color: #35a26e;
+    color: white;
+}
+
+.dark-mode button {
+    background-color: #56626a;
+}
+.dark-mode button:hover {
+    background-color: #1c2833;
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+    .container{
+        max-width: 95%;
+    }
+    main {
+        flex-direction: column;
+        gap: 10px;
+    }
+    aside{
+        flex: 1.5;/*Gives it more space on tablets*/
+    }
+}
